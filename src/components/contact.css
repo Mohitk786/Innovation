@@ -1,0 +1,56 @@
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .phone-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .input-group {
+      gap: 20px;
+    }
+  
+    .phone-group {
+      flex-direction: row;
+    }
+  
+    .phone-group select {
+      width: 30%;
+    }
+  
+    .phone-group input {
+      width: 70%;
+    }
+  }
+  

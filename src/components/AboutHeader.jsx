@@ -1,5 +1,5 @@
 import React from 'react'
-import {metaData} from "./data"
+import {metaData} from "./data/data"
 
 const AboutHeader = () => {
   return (

@@ -1,28 +1,53 @@
 import React from 'react'
-import AboutHeader from './AboutHeader'
-import { buisnessData } from './data'
+import ReactPlayer from 'react-player'
+import "./about.css"
+import { useNavigate } from 'react-router-dom'
 
 const About = () => {
-  return (
-    <div className='w-full h-screen flex gap-14 bg-slate-200 flex-col'>
-        <AboutHeader/>
-        <div className="w-full p-5 max-w-screen-lg mx-auto">
-            {buisnessData.map((data, index) => (
-                <div>
-                <div className='flex justify-between'>
-                    <div key={index} className={`w-full py-2 pl-4 flex flex-col ${index % 2 === 0 ? 'bg-orange-100' : 'bg-orange-50'} text-black`}>
-                        <p className="">{data.name}</p>
-                    </div>
-                    <div key={index} className= {`w-full flex items-start justify-center flex-col ${index % 2 === 0 ? 'bg-orange-100' : 'bg-orange-50'} text-black`}>
-                        <p className="">{data.value}</p>
-                    </div>
-                </div>
-                </div>
+    const navigate = useNavigate();
+  
+    return (
+    <section className="about" id="about">
+     
 
-            ))}
+        <div className="row">
+            <div className="video">
+                <ReactPlayer 
+                    playing={true}
+                    muted={true}
+                    loop={true}
+                    url="/assets/about.mp4" 
+                />
+            </div>
+            <div className="content">
+                <h3>We provide you the best work which you dreamt for!</h3>
+                <p>With years of experience in the industry, we have built a reputation for delivering projects on time and within budget, without compromising on quality. From concept development to final execution, we handle every aspect of the project with precision and care, ensuring that every detail is executed to perfection.Contact us today to discuss your project needs and let us help you bring your vision to life!</p>
+                <button onClick={()=>navigate("/contact")} className="btn">read more</button>
+            </div>
         </div>
 
-    </div>
+        <div className="box-container">
+            <div className="box">
+                <h3>10+</h3>
+                <p>years of experience</p>
+            </div>
+
+            <div className="box">
+                <h3>200+</h3>
+                <p>projects completed</p>
+            </div>
+
+            <div className="box">
+                <h3>10+</h3>
+                <p>satisfied clients</p>
+            </div>
+
+            <div className="box">
+                <h3>25+</h3>
+                <p>active workers</p>
+            </div>
+        </div>
+    </section>
   )
 }
 

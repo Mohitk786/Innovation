@@ -2,13 +2,14 @@ import React from 'react'
 import * as Icons from "react-icons/fa";
 import { OWNER_DETAILS, EXPLORE_LINK } from './data/data';
 import { Link } from 'react-router-dom';
+import Map from './Map';
 
-const Render =({iconName, name, path})=>{
+export const Render =({iconName, name, path})=>{
     let Icon;
     if(iconName)Icon=Icons[iconName];
     return (
         <div className='flex gap-4 items-center'>
-            {Icon && <Icon className="text-lg"/>}
+            {Icon && <div className='bg-indigo-500 p-1 rounded-full flex items-center justify-center'><Icon className="text-xl text-white"/></div>}
             {path ? <Link to={path}>{name}</Link>:<p>{name}</p>}
         </div>
     )
@@ -16,11 +17,13 @@ const Render =({iconName, name, path})=>{
 
 const Footer = () => {
     return (
-      <div className='bg-black text-white opacity-90'>
-        <div className='flex flex-col items-start ml-8 lg:flex-row justify-around lg:mx-auto py-8 lg:py-16 max-w-7xl'>
+      <div 
+        style={{ backgroundImage: "url('/assets/4.jpeg')", backgroundSize: 'cover' }}
+        className=' text-white opacity-90'>
+        <div className='bg-black opacity-90 w-screen flex flex-col items-start ml-8 lg:flex-row justify-around lg:mx-auto py-8 lg:py-16 '>
           {/* About Section */}
           <div className='flex flex-col gap-6 mb-8 lg:mb-0'>
-            <p className='font-semibold text-2xl'>About Sun Shades Solution</p>
+            <p className='font-semibold text-2xl'>About <span className='text-indigo-500'>Irshad Interiors</span></p>
             <div className='flex flex-col gap-4'>
               {OWNER_DETAILS.map((data, index) => (
                 <Render {...data} key={index} />
@@ -41,9 +44,14 @@ const Footer = () => {
           {/* Contact Section */}
           <div className='flex flex-col gap-6'>
             <p className='font-semibold text-2xl'>We're here</p>
-            {/* Add contact details here */}
+             <Map/>
           </div>
         </div>
+        <footer className="h-full bg-indigo-500 p-2">
+          <div className="flex justify-center items-center">
+            <p className='text-white text-center'>© Copyright 2024 Irshad Interiors All Rights Reserved! Designed & Developed by Mohit Kumar</p>
+          </div>
+        </footer>
       </div>
     );
   };

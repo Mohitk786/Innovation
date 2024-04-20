@@ -1,22 +1,41 @@
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
-import { Link } from 'react-router-dom';
-
+import { Link, useNavigate } from 'react-router-dom';
+import { OWNER_DETAILS } from './data/data';
+import { Render } from './Footer';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <nav className="bg-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           
-          <div className="flex w-full justify-between">
-            <div className="flex-shrink-0">
+          <div className=" flex w-full justify-around">
+            <div className="-ml-40 flex justify-start md:w-[40%] items-center md:justify-around">
+             <div className=''>
               <img
-                className="h-8 w-8"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                alt="Workflow"
-              />
+                  onClick={navigate('/')}
+                  className="h-8"
+                  src="/logo.png"
+                  alt="Workflow"
+                  width={150}
+                />
+             </div>
+
+              <div className='hidden lg:flex gap-5 text-white'>
+                <Render 
+                 name={OWNER_DETAILS[2].name.split(',')[0]}
+                 iconName={OWNER_DETAILS[2].iconName}
+                />
+
+                <Render 
+                 name={OWNER_DETAILS[3].name}
+                 iconName={OWNER_DETAILS[3].iconName}
+                />
+              </div>
+
             </div>
             
             <div className="hidden md:block">

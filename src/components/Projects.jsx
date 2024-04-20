@@ -18,7 +18,7 @@ export const Projects = () => {
           </div>
         </div>
 
-        <div className='w-full flex justify-center items-center'>
+        <div className='w-full translate-y-5  flex justify-center items-end'>
             <img src="/assets/pp.png" alt='Architecture'/>
         </div>
     </div>

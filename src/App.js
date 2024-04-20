@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="overflow-x-hidden flex flex-col gap-5 h-auto">
       <Navbar />
-      {pathname!='/' && <PathTracker pathname={pathname}/>}
+      {pathname!=='/' && <PathTracker pathname={pathname}/>}
       <Routes>
         <Route path='/about' element={<About/>}/>
         <Route path='/' element={<Home/>}/>

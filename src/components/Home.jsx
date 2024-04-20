@@ -7,7 +7,6 @@ import { Projects } from './Projects';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-  const navigate = useNavigate();
   return (
     <div>
       <div className='flex flex-col gap-16 w-full items-center h-auto'>

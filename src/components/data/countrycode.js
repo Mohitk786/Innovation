@@ -1,4 +1,4 @@
-[
+export const COUNTARY_CODE = [
     {
         "country": "Afghanistan",
         "code": "+93"

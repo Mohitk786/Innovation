@@ -81,6 +81,16 @@ export const buisnessData=[
     
 ]
 
+export const OUR_WORK=[
+        {
+            imageUrl:'18.jpeg',
+            description: 'When we started our founder’s aim was to foam this company “A Complete Solution Provider” for all trending challenges of construction and development industry of India. In the same stream we have been serving to the nation for over the last two decades by holding the designation of North India’s leading Designer, Engineer, Manufacturer, Supplier and Builder. Our services are turnkey basis we follow the Design to Build concept for the execution and development of Businessmen, Industrialists and Government projects.'
+        },
+        {
+            imageUrl: '22.jpeg',
+            description: 'Irshad Interior follows this concept because this makes it convenient for the clients to coordinate with only one vendor who has all facilities at a single platform even its proven by our client’s feedback that the deals, they made with Irshad Interior were very beneficial at every aspect during the project execution. We are widely integrated with Modern steel construction, Civil construction, and Composite construction. We have built many landmarks for our customers according to their need and project requirements and we are currently working with many India’s Leading Groups from different sectors.'
+        }
+]
 
 
 export const cardData=[

@@ -8,24 +8,24 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <nav className="bg-gray-800">
+    <nav className="bg-gray-800 ">
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           
-          <div className=" flex w-full justify-around">
-            <div className="-ml-40 flex justify-start md:w-[40%] items-center md:justify-around">
+          <div className="flex w-full   justify-between">
+            
+            <div className="flex w-[50%] items-center gap-8 ">
              <div className=''>
               <img
                   onClick={()=>navigate('/')}
-                  className="h-8"
+                  className="h-14 md:overflow-visible"
                   src="/logo.png"
                   alt="Workflow"
-                  width={150}
                 />
              </div>
 
-              <div className='hidden lg:flex gap-5 text-white'>
-                <Render 
+              <div className='hidden lg:w-[90%]  lg:overflow-visible lg:flex  justify-center gap-5 text-white'>
+                <Render
                  name={OWNER_DETAILS[2].name.split(',')[0]}
                  iconName={OWNER_DETAILS[2].iconName}
                 />
@@ -38,8 +38,7 @@ const Navbar = () => {
 
             </div>
             
-            <div className="hidden md:block">
-              <div className="ml-10 flex items-baseline  space-x-4">
+            <div className="w-[50%] hidden md:flex items-center justify-center  ">
                 <Link
                  to={"/"}
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md  font-medium"
@@ -64,7 +63,6 @@ const Navbar = () => {
                 >
                   Contact Us
                 </Link>
-              </div>
             </div>
           </div>
 

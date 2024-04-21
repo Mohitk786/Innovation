@@ -3,8 +3,8 @@ import {metaData} from "./data/data"
 
 const AboutHeader = () => {
   return (
-    <div className='w-full bg-slate-200'>
-        <div className= 'm-2 w-[80%] flex flex-col lg:flex-row gap-10 items-center justify-between mx-auto'>
+    <div className='w-full  bg-slate-200'>
+        <div className= ' w-[80%] flex flex-col lg:flex-row gap-10 items-center justify-between mx-auto'>
             <div className='w-full lg:w-[50%] flex flex-col gap-5 items-center justify-center'>
                 <div className='p-2 flex flex-col gap-7 text-gray-800 leading-7'>
                     <p className='font-bold text-blue-600 text-3xl'>Welcome to {metaData.Organization_Name}</p>
@@ -13,8 +13,8 @@ const AboutHeader = () => {
                     <p>Providing you the best range of Tensile Gazebo Structure and Modular Tensile Window Sheds with effective & timely delivery.</p>
                 </div>
             </div>
-            <div className='lg:w-[50%] flex justify-center'>
-                <img src='/assets/Name.jpeg' alt="Card" className="object-cover w-full lg:w-[80%] lg:min-w-full max-w-[80%]"/>
+            <div className='lg:w-[50%] p-2 flex justify-center'>
+                <img src='/assets/Name.jpeg' alt="Card" className="object-cover w-full lg:w-[80%] "/>
             </div>
         </div>
     </div>

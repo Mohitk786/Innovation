@@ -8,19 +8,19 @@ import Carousel from './Carousal';
 const Home = () => {
   return (
     <div>
-      <div className='flex flex-col gap-16 w-full items-center h-auto'>
-        <div className="w-[80%] flex flex-col gap-20 items-center ">
-          
-          <div className="w-full lg:max-h-[550px] lg:overflow-hidden flex justify-center">
+      <div 
+        className='flex flex-col w-full items-center h-auto'>
+          <div  className="w-[80%] flex flex-col gap-20 items-center ">
+          <div className="min-w-full lg:max-h-[450px]  flex justify-center">
             <ReactPlayer
               loop={true}
               controls={false}
               playing={true}
               muted={true}
               width={'1350px'}
-              height={'750px'}
+              height={'450px'}
               url={"/assets/video.mp4"}
-              className="w-[1250px] h-[650px]"
+              className="min-w-[1250px] h-[650px]"
             
             />
           </div>

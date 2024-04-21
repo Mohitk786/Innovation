@@ -25,7 +25,6 @@ const About = () => {
             </div>
 
             <div className="flex flex-col md:items-center lg:flex-row lg:justify-evenly w-[60%]  lg:h-[10rem] gap-10">
-            {/* <div className="lg:translate-x-24 grid grid-cols-1 lg:mx-auto font-dark md:grid-cols-4 lg:grid-cols-4 gap-4 mt-8 md:mt-12 lg:mt-16 w-full max-w-[80%]"> */}
                 <div className="w-full md:w-[45%] h-[10rem] bg-yellow-400 rounded-lg flex flex-col items-center justify-center p-4">
                     <h3 className="text-center font-semibold text-4xl">10+</h3>
                     <p className="text-center ">years of experience</p>

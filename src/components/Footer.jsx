@@ -20,9 +20,9 @@ const Footer = () => {
       <div 
         style={{ backgroundImage: "url('/assets/4.jpeg')", backgroundSize: 'cover' }}
         className=' text-white  opacity-90'>
-        <div className='bg-black opacity-90 w-screen flex flex-col items-start px-4  lg:flex-row justify-around lg:mx-auto py-8 lg:py-16 '>
+        <div className='bg-black opacity-90 w-screen flex flex-col items-start px-4 md:items-center lg:items-start   lg:flex-row justify-around lg:mx-auto py-8 lg:py-16 '>
           {/* About Section */}
-          <div className='flex flex-col gap-6 mb-8 lg:mb-0'>
+          <div className='flex flex-col w-[400] md:w-[450px] gap-6 mb-8 lg:mb-0'>
             <p className='font-semibold text-2xl'>About <span className='text-indigo-500'>Irshad Interiors</span></p>
             <div className='flex flex-col gap-4'>
               {OWNER_DETAILS.map((data, index) => (
@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
   
           {/* Explore Links Section */}
-          <div className='flex flex-col gap-6 mb-8 lg:mb-0'>
+          <div className='flex flex-col gap-6 w-[400px] md:w-[450px] mb-8 lg:mb-0'>
             <p className='font-semibold text-2xl'>Explore Links</p>
             <div className='flex flex-col gap-4'>
               {EXPLORE_LINK.map((link, index) => (
@@ -42,8 +42,8 @@ const Footer = () => {
           </div>
   
           {/* Contact Section */}
-          <div className='flex flex-col gap-6'>
-            <p className='font-semibold text-2xl'>We're here</p>
+          <div className='w-[400px] md:w-[450px] items-start flex flex-col gap-6'>
+            <p className='font-semibold  text-2xl'>We're here</p>
              <Map/>
           </div>
         </div>

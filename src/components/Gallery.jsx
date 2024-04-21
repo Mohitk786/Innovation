@@ -33,7 +33,6 @@ const Gallery = () => {
         {cardData.map((card, index) => (
           card.id && (
             <Card
-              // id={card.id}
               index={index}
               imageUrl={card.imageUrl}
               key={index}
@@ -47,7 +46,7 @@ const Gallery = () => {
         <div className='fixed top-0 left-0 w-full h-full flex justify-center items-center bg-black bg-opacity-80 z-50'>
             <MdOutlineKeyboardArrowLeft 
             className='text-6xl absolute cursor-pointer hover:text-indigo-300 duration-200 left-0 top-1/2 w-[5%] text-white'
-            onClick={goToNextImage}
+            onClick={goToPreviousImage}
           />
         
           <RxCross1 
@@ -58,7 +57,7 @@ const Gallery = () => {
 
           <img
             src={'/assets/'+cardData[selectedImageIndex].imageUrl}
-            alt={`Image ${selectedImageIndex + 1}`}
+            alt={`${selectedImageIndex + 1}`}
             className='max-w-full max-h-full'
           />
           <MdOutlineKeyboardArrowRight 

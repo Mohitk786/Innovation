@@ -16,7 +16,7 @@ const Navbar = () => {
             <div className="-ml-40 flex justify-start md:w-[40%] items-center md:justify-around">
              <div className=''>
               <img
-                  onClick={navigate('/')}
+                  onClick={()=>navigate('/')}
                   className="h-8"
                   src="/logo.png"
                   alt="Workflow"

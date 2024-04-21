@@ -19,8 +19,8 @@ const Footer = () => {
     return (
       <div 
         style={{ backgroundImage: "url('/assets/4.jpeg')", backgroundSize: 'cover' }}
-        className=' text-white opacity-90'>
-        <div className='bg-black opacity-90 w-screen flex flex-col items-start ml-8 lg:flex-row justify-around lg:mx-auto py-8 lg:py-16 '>
+        className=' text-white  opacity-90'>
+        <div className='bg-black opacity-90 w-screen flex flex-col items-start px-4  lg:flex-row justify-around lg:mx-auto py-8 lg:py-16 '>
           {/* About Section */}
           <div className='flex flex-col gap-6 mb-8 lg:mb-0'>
             <p className='font-semibold text-2xl'>About <span className='text-indigo-500'>Irshad Interiors</span></p>
@@ -47,6 +47,7 @@ const Footer = () => {
              <Map/>
           </div>
         </div>
+
         <footer className="h-full bg-indigo-500 p-2">
           <div className="flex justify-center items-center">
             <p className='text-white text-center'>© Copyright 2024 Irshad Interiors All Rights Reserved! Designed & Developed by Mohit Kumar</p>

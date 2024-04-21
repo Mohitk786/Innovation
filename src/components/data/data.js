@@ -2,8 +2,10 @@ export const metaData={
     Organization_Name:"Irshad Interiors",
     Our_Products_Description:"Our service range includes a wide range of Roofing Sheds Fabrication Services, Tensile Membrane Structure Car Parking Shades, UPVC Sun Shade Fabrication Service, SS Canopy Fabrication Services and PVC Garden Shed Fabrication Service.",
     Banker: "Kota",
-    GST_NO: "09XYZAB78665ABCD"
+    GST_NO: "09XYZAB78665ABCD",
+    WHATSAPP_CHAT:'https://api.whatsapp.com/send?phone=7834980799&text=I%20am%20Interested'
 }
+
 
 export const OWNER_DETAILS=[
     {
@@ -20,6 +22,7 @@ export const OWNER_DETAILS=[
     },
     {
         name:"irshadinteriors72@gmail.com",
+        redirect:"mailto:irshadinteriors72@gmail.com",
         iconName:"FaEnvelopeOpenText"
     },
     {

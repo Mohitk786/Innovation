@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Transition } from '@headlessui/react';
 import { Link, useNavigate } from 'react-router-dom';
-import { OWNER_DETAILS } from './data/data';
+import { OWNER_DETAILS, metaData } from './data/data';
 import { Render } from './Footer';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +18,7 @@ const Navbar = () => {
              <div className=''>
               <img
                   onClick={()=>navigate('/')}
-                  className="h-14 md:overflow-visible"
+                  className="h-14 md:overflow-visible cursor-pointer"
                   src="/logo.png"
                   alt="Workflow"
                 />
@@ -26,11 +26,13 @@ const Navbar = () => {
 
               <div className='hidden lg:w-[90%]  lg:overflow-visible lg:flex  justify-center gap-5 text-white'>
                 <Render
+                redirect={metaData.WHATSAPP_CHAT}
                  name={OWNER_DETAILS[2].name.split(',')[0]}
                  iconName={OWNER_DETAILS[2].iconName}
                 />
 
                 <Render 
+                 redirect={OWNER_DETAILS[3].redirect}
                  name={OWNER_DETAILS[3].name}
                  iconName={OWNER_DETAILS[3].iconName}
                 />

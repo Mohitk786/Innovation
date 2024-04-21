@@ -4,13 +4,13 @@ import { OWNER_DETAILS, EXPLORE_LINK } from './data/data';
 import { Link } from 'react-router-dom';
 import Map from './Map';
 
-export const Render =({iconName, name, path})=>{
+export const Render =({iconName, name, path, redirect})=>{
     let Icon;
     if(iconName)Icon=Icons[iconName];
     return (
         <div className='flex gap-4 items-center'>
             {Icon && <div className='bg-indigo-500 p-1 rounded-full flex items-center justify-center'><Icon className="text-xl text-white"/></div>}
-            {path ? <Link to={path}>{name}</Link>:<p>{name}</p>}
+            {path ? <Link to={path}>{name}</Link>:redirect? <a href={redirect}>{name}</a>:<p>{name}</p>}
         </div>
     )
 }

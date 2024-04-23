@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(
 	cors({
 		 // Allow requests from your specific domain
-  		res.header('Access-Control-Allow-Origin', "*");
+  		origin:'*',
 
   		// Specify allowed methods and headers
   		res.header('Access-Control-Allow-Methods', 'GET, POST');

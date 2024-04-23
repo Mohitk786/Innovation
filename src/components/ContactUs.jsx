@@ -5,7 +5,7 @@ import { Render } from './Footer';
 import { OWNER_DETAILS } from './data/data';
 import { COUNTARY_CODE } from './data/countrycode';
 
-const BASE_URL="http://localhost:5000/";
+const BASE_URL="https://irshadinteriors.onrender.com/";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({

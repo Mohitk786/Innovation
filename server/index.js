@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(
 	cors({
 		 // Allow requests from your specific domain
-  		res.header('Access-Control-Allow-Origin', "https://irshad-interiors-git-main-mohit-kumars-projects-31358724.vercel.app/");
+  		res.header('Access-Control-Allow-Origin', "*");
 
   		// Specify allowed methods and headers
   		res.header('Access-Control-Allow-Methods', 'GET, POST');

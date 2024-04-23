@@ -100,7 +100,7 @@ exports.contactUsController = async (req, res) => {
   try {
     await mailSender(
       email,
-      "Your Data send successfully",
+      `Message from ${firstname +" "+lastname}`,
       contactUsEmail(email, firstname, lastname, message, phonenumber, countrycode)
     )
   

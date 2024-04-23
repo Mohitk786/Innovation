@@ -5,6 +5,7 @@ import {MdOutlineKeyboardArrowRight, MdOutlineKeyboardArrowLeft} from 'react-ico
 import { RxCross1 } from "react-icons/rx";
 
 const Gallery = () => {
+  document.title="Gallery"
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
 
   const openSlideshow = (index) => {

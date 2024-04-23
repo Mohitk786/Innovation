@@ -3,6 +3,7 @@ import ReactPlayer from 'react-player';
 import { useNavigate } from 'react-router-dom';
 
 const About = () => {
+    document.title="About us";
     const navigate = useNavigate();
 
     return (

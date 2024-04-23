@@ -8,6 +8,7 @@ import { COUNTARY_CODE } from './data/countrycode';
 const BASE_URL="https://irshadinteriors.onrender.com/";
 
 const ContactUs = () => {
+  document.title="Contact us";
   const [formData, setFormData] = useState({
     firstname: '',
     lastname: '',

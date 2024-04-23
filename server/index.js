@@ -13,10 +13,6 @@ app.use(
 	cors({
 		 // Allow requests from your specific domain
   		origin:'*',
-
-  		// Specify allowed methods and headers
-  		res.header('Access-Control-Allow-Methods', 'GET, POST');
-  		res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 	})
 )
 

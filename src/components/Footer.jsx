@@ -50,7 +50,7 @@ const Footer = () => {
 
         <footer className="h-full bg-indigo-500 p-2">
           <div className="flex justify-center items-center">
-            <p className='text-white text-center'>© Copyright 2024 Irshad Interiors All Rights Reserved! Designed & Developed by Mohit Kumar</p>
+            <p className='text-white text-center'>© Copyright 2024 Irshad Interiors All Rights Reserved! Designed & Developed by Parvez Saifi</p>
           </div>
         </footer>
       </div>
